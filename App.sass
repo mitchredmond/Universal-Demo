@@ -1,0 +1,82 @@
+@use 'src/assets/publicStyle/colors'
+@use 'src/assets/publicStyle/spacing'
+@use 'src/assets/publicStyle/borderRadius'
+
+#app
+	display: flex
+	justify-content: center
+
+
+
+// ————————————————————— CardRow & Card.SASS Overrides
+
+.card-layout
+	gap: spacing.$components-cards-column-spacing !important
+	
+.card-row
+	gap: spacing.$components-cards-row-spacing !important
+	
+	.card-3,
+	.card1-3
+		background-color: colors.$components-cards-card-background-color !important
+		border-radius: borderRadius.$components-cards-card-border-radius !important
+	
+	.callout-text, 
+	.universal-land-area, 
+	.card-3,
+	.card1-3,
+	.avenirnext-bold-log-cabin-16px,
+	.avenirnext-bold-licorice-11px
+		color: colors.$typography-text-base-color !important
+	
+	.group-1,
+	.overlap-group1,
+	.overlap-group-4,
+	.content,
+	.info-card-content-alt,
+	.land-area-with-pin-one-line,
+	.universal-land-area,
+	.copy,
+	.callout-text,
+	.elements,
+	.image
+		min-width: unset !important
+		width: 100% !important
+		
+	.content
+		background-color: transparent !important
+		
+	.universal-land-area
+		white-space: pre !important
+	
+
+	
+// ————————————————————— MapView2 & Poicard.SASS Overrides
+
+.map-view-1
+	.overlap-group14,
+	.map-image-crop,
+	.image
+		width: 1440px !important
+	
+	.scroll-box
+		padding: 20px 26px !important
+		height: 697px !important
+		overflow: scroll !important
+	
+	.poicards
+		display: flex
+		flex-direction: column
+		gap: spacing.$components-cards-column-spacing !important
+		
+	.poicard
+		background-color: colors.$components-cards-card-background-color !important
+		border-radius: borderRadius.$components-cards-card-border-radius !important
+		color: colors.$typography-text-base-color !important
+		
+		.avenirnext-regular-normal-log-cabin-12px, 
+		.avenirnext-bold-log-cabin-16px, 
+		.avenirnext-bold-licorice-11px
+			color: colors.$typography-text-base-color !important
+			
+				

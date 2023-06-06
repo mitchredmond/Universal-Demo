@@ -1,0 +1,123 @@
+{
+  "source": ["src/assets/tokenTrans.json"],
+  "platforms": {
+      "scss": {
+          "transformGroup": "scss",
+          "buildPath": "src/assets/publicStyle/",
+          "files": [
+              {
+                  "destination": "_colors.scss",
+                  "format": "scss/variables",
+                  "options": {
+                    "outputReferences": true
+                  },
+                  "filter": {
+                      "type": "color"
+                  }
+              },
+              {
+                  "destination": "_typography.scss",
+                  "format": "scss/variables",
+                  "options": {
+                    "outputReferences": true
+                  },
+                  "filter": {
+                      "type": "typography"
+                  }
+              },
+              {
+                  "destination": "_fonts.scss",
+                  "format": "scss/variables",
+                  "filter": {
+                      "type": "fontFamilies"
+                  }
+              },
+              {
+                  "destination": "_lineHeights.scss",
+                  "format": "scss/variables",
+                  "filter": {
+                      "type": "lineHeights"
+                  }
+              },
+              {
+                "destination": "_fontWeights.scss",
+                "format": "scss/variables",
+                "filter": {
+                  "type": "fontWeights"
+                }
+            },
+            {
+              "destination": "_fontSizes.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "fontSizes"
+                }
+            },
+            {
+							"destination": "_letterSpacing.scss",
+							"format": "scss/variables",
+							"filter": {
+								"type": "letterSpacing"
+                }
+            },
+            {
+							"destination": "_paragraphSpacing.scss",
+							"format": "scss/variables",
+							"filter": {
+								"type": "paragraphSpacing"
+                }
+            },
+            {
+							"destination": "_borderRadius.scss",
+							"format": "scss/variables",
+							"filter": {
+								"type": "borderRadius"
+                }
+            },
+            {
+							"destination": "_spacing.scss",
+							"format": "scss/variables",
+							"filter": {
+								"type": "spacing"
+                }
+            },
+            {
+							"destination": "_boxShadow.scss",
+							"format": "scss/variables",
+              "options": {
+                "showFileHeader": false,
+                "outputReferences": true,
+                "themeable": false
+              },
+							"filter": {
+								"type": "boxShadow"
+                }
+            },
+            {
+              "destination": "_compositionTokens.scss",
+              "format": "scss/variables",
+              "options": {
+                "showFileHeader": false,
+                "outputReferences": true,
+                "themeable": false
+              },
+              "filter": {
+                "type": "composition"
+                }
+            },
+            {
+							"destination": "_description.scss",
+							"format": "scss/variables",
+							"filter": "descriptionFilter"
+            },
+            {
+							"destination": "_background.scss",
+							"format": "scss/variables",
+							"filter": {
+								"description": "Background"
+                }
+            }
+          ]
+      }
+		}
+	}
